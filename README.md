@@ -50,13 +50,10 @@ $$d_2 = d_1 - \sigma \sqrt{T}$$
 Ensure you have Python and Jupyter installed. All dependencies can be installed via pip:
 
 ```bash
-pip install numpy scipy pandas jupyter
+pip install numpy scipy pandas
 ```
 
 ### Usage
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/matthewhdanter/Black-Scholes_Engine.git](https://github.com/matthewhdanter/Black-Scholes_Engine.git)
-   ```
-2. Place your market data files ('price_history.csv' and 'options_chain.csv') into the 'data/' directory
-3. Open and run the file, ensuring to match the names of the files in the script and adjusting the risk-free interest rate
+1. Download the .py file from the repository
+2. Download your market data files ('ExampleHistory.csv' and 'ExampleOChain.csv')
+3. Open the file, adjust all parameters and file names, and run the file
