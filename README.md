@@ -1,4 +1,4 @@
-# Black-Scholes_Engine
+# Black-Scholes Engine
 A Python execution of the Black-Scholes options pricing model
 
 ## Overview
@@ -9,7 +9,7 @@ This project ingests historical price series and option chain data to dynamicall
 * **Closed-Form Option Pricing:** Calculates theoretical European Call ($C$) and put ($P$) valuations
 * **Data Parsing Pipeline:** Ingests CSV market data and option chains via Pandas
 
-  ---
+---
   
 ## Mathematical Formulation
 The engine uses the Black-Scholes-Merton model assuming lognormal distribution of underlying stock prices:
@@ -31,7 +31,7 @@ $$d_2 = d_1 - \sigma \sqrt{T}$$
 * **$T$**: Time to maturity (in annualized years)
 * **$N(\cdot)$**: Standard normal cumulative distribution function (CDF)
 
-  ---
+---
   
 ## Tech Stack & Dependencies
 
@@ -39,7 +39,7 @@ $$d_2 = d_1 - \sigma \sqrt{T}$$
 * **Environment:** Jupyter Notebook / Anaconda
 * **Libraries:**
   * `numpy` - Array manipulations & vectorization
-  * `scipy` - Cumulative distribution function ('scipy.stats.norm')
+  * `scipy` - Cumulative distribution function (`scipy.stats.norm`)
   * `pandas` - Market data parsing and dataframe manipulation
 
 ---
@@ -54,6 +54,10 @@ pip install numpy scipy pandas
 ```
 
 ### Usage
-1. Download the .py file from the repository
-2. Download your market data files ('ExampleHistory.csv' and 'ExampleOChain.csv')
-3. Open the file, adjust all parameters and file names, and run the file
+1. Clone the repository
+```bash
+git clone https://github.com/matthewhdanter/Black-Scholes_Engine.git
+cd Black-Scholes_Engine
+```
+2. Place market data files (`ExampleHistory.csv` and `ExampleOChain.csv`) in the root directory
+3. Open and run the main script to process data and calculate options prices
